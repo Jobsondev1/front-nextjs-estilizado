@@ -1,16 +1,19 @@
 import React from 'react'
 import Head from 'next/head'
+import BorboletaLogo from '../assets/Borboleta.png';
+import { Container } from '../styles/stylesPages/Home';
 
- function Home() {
+const Home: React.FC = () => {
   return (
-    <div>
+    <Container>
       <Head>
         <title>Home</title>
       </Head>
-      <main>
-        <h1>Home</h1>
-      </main>
-    </div>
+    <img src={BorboletaLogo} alt="" />
+        <h1>Boboleta </h1>
+        <p>Efeito boboleta</p>
+
+    </Container>
   )
 }
 export default Home;
